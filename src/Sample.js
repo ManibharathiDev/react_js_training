@@ -15,9 +15,19 @@ const Sample = (props) =>{
         textAlign:"center",
     };
 
+    let details = {
+        "name":"Dhanusree",
+        "age":23,
+        "address":"CBE"
+    };
+
+    
+
     console.log(props);
     return (
         <>
+            <h1>My Name is : {details.name}</h1>
+            <div style={style}>{5+5}</div>
             <h1 style={style}>{props.myname}</h1>
             {parseInt(props.age)+parseInt(props.age)}
             {/* <h1>{props.age}+{props.age}</h1> */}
